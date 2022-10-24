@@ -6,6 +6,7 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
 * **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
 ## Existing studies for faster and efficient attention methods
+**Existing study do not show wall-clock speedup against the standard attention method.**
 ### Sparse-approximations
 * Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya. Reformer: The efficient transformer. In The International Conference on Machine Learning (ICML), 2020.
 * Aurko Roy, Mohammad Saffar, Ashish Vaswani, and David Grangier. Efficient content-based sparse attention with routing transformers. Transactions of the Association for Computational Linguistics, 9: 53–68, 2021.
@@ -17,7 +18,6 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * Iz Beltagy, Matthew E Peters, and Arman Cohan. Longformer: The long-document transformer. arXiv preprint arXiv:2004.05150, 2020.
 * Beidi Chen, Tri Dao, Eric Winsor, Zhao Song, Atri Rudra, and Christopher Ré. Scatterbrain: Unifying sparse and low-rank attention. In Advances in Neural Information Processing Systems (NeurIPS), 2021.
 * Manzil Zaheer, Guru Guruganesh, Kumar Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big bird: Transformers for longer sequences. Advances in Neural Information Processing Systems, 33, 2020.
-**Existing study do not show wall-clock speedup against the standard attention method.**
 
 # Attention is the HEART of Transformers
 <img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
