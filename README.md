@@ -30,7 +30,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 * **O** = Dropout(Softmax(Mask(**QK**<sup>**T**</sup>)))**V**
 ### Question 2: Is Attention **Compute-Bound** or **Memory-Bound**?
 
-## Flash Attention
+## FlashAttention
 ![Screen Shot 2022-10-24 at 4 34 05 PM](https://user-images.githubusercontent.com/25111091/197633996-2a1553f9-3126-4158-a964-b90911b5c660.png)
 * **GPU Memory Hierarchy (Left)**: For example, the A100 GPU has 40-80GB of high bandwidth memory (HBM) with bandwidth 1.5-2.0TB/s and 192KB of on-chip SRAM per each of 108 streaming multiprocessors with bandwidth estimated around 19TB/s.
 * **FlashAttention (Middle)**: FlashAttention loops through blocks of the K and V matrices and loads them to fast on-chip SRAM. In each block, FlashAttention loops over blocks of Q matrix (blue arrows), loading them to SRAM, and writing the output of the attention computation back to HBM.
@@ -40,9 +40,11 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 ![Screen Shot 2022-10-24 at 4 16 04 PM](https://user-images.githubusercontent.com/25111091/197633381-886b30ad-027d-4fde-8862-260fc79d477d.png)
 * where **N** is the sequence length and **d** is the head dimension.
 * **O(Nd+N<sup>2</sup>)** HBM Accesses
-## Flash Attention Implementation
+## FlashAttention Implementation
 ![Screen Shot 2022-10-24 at 4 13 45 PM](https://user-images.githubusercontent.com/25111091/197630869-d6a48fba-d4f1-4027-ae48-7fc3a4a820ad.png)
 * where **N** is the sequence length, **d** is the head dimension and **M** is the size of SRAM while **d &le; M &le; Nd**.
 * **O(N<sup>2</sup>d<sup>2</sup>M<sup>-1</sup>)** HBM Accesses
-## Flash Attention Benchmark
+## FlashAttention Benchmark
 ![Screen Shot 2022-10-24 at 4 36 00 PM](https://user-images.githubusercontent.com/25111091/197634326-b64e78b8-1879-4fbb-ae9b-895d01b4cb4c.png)
+
+## Critical Analysis: Limitation
