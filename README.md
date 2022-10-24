@@ -38,11 +38,11 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 ### Question 3: FlashAttention involves "tiling" and "recomputation" techniques. Why does it need recomputation?
 ## Standard Attention Implementation
 ![Screen Shot 2022-10-24 at 4 16 04 PM](https://user-images.githubusercontent.com/25111091/197633381-886b30ad-027d-4fde-8862-260fc79d477d.png)
-* where N is the sequence length and d is the head dimension.
-* O(Nd+N<sup>2</sup>) HBM Accesses
+* where **N** is the sequence length and **d** is the head dimension.
+* **O(Nd+N<sup>2</sup>)** HBM Accesses
 ## Flash Attention Implementation
 ![Screen Shot 2022-10-24 at 4 13 45 PM](https://user-images.githubusercontent.com/25111091/197630869-d6a48fba-d4f1-4027-ae48-7fc3a4a820ad.png)
-* where N is the sequence length, d is the head dimension and M is the size of SRAM while d &le; M &le; Nd.
-* O(N<sup>2</sup>d<sup>2</sup>M<sup>-1</sup>) HBM Accesses
+* where **N** is the sequence length, **d** is the head dimension and **M** is the size of SRAM while **d &le; M &le; Nd**.
+* **O(N<sup>2</sup>d<sup>2</sup>M<sup>-1</sup>)** HBM Accesses
 ## Flash Attention Benchmark
 ![Screen Shot 2022-10-24 at 4 36 00 PM](https://user-images.githubusercontent.com/25111091/197634326-b64e78b8-1879-4fbb-ae9b-895d01b4cb4c.png)
