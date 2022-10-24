@@ -5,7 +5,6 @@ This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt
 * **NLP**: Large context required to understand books, plays, and instruction manuals
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
 * **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
-## How to scale Transformers to longer sequences?
 
 # Attention is the HEART of Transformers
 <img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
