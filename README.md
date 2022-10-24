@@ -7,8 +7,8 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
 
 # What are the existing methods to accomodate longer sequences?
-## Existing studies for faster and efficient attention methods
-**Existing study do not show wall-clock speedup against the standard attention method.**
+## Existing studies for the 
+**Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.**
 ### Sparse-approximations
 * Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya. Reformer: The efficient transformer. In The International Conference on Machine Learning (ICML), 2020.
 * Aurko Roy, Mohammad Saffar, Ashish Vaswani, and David Grangier. Efficient content-based sparse attention with routing transformers. Transactions of the Association for Computational Linguistics, 9: 53–68, 2021.
