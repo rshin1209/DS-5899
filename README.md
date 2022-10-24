@@ -13,7 +13,7 @@ This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
 **O** = Dropout(Softmax(Mask(**QK** <sup>**T**</sup>)))**V**
 ## Question 1
-Is Attention **Computer-Bound** or **Memory-Bound**?
+Is Attention **Compute-Bound** or **Memory-Bound**?
 
 # Flash Attention
 ![Screen Shot 2022-10-24 at 4 34 05 PM](https://user-images.githubusercontent.com/25111091/197633996-2a1553f9-3126-4158-a964-b90911b5c660.png)
