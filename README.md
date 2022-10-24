@@ -16,8 +16,7 @@ This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt
 Is Attention **Computer-Bound** or **Memory-Bound**?
 
 # Flash Attention
-![Screen Shot 2022-10-24 at 4 31 49 PM](https://user-images.githubusercontent.com/25111091/197633649-e77905cc-2025-4900-b003-28e0bc7be93a.png)
-![Screen Shot 2022-10-24 at 4 32 01 PM](https://user-images.githubusercontent.com/25111091/197633680-7bca7826-287e-44ba-b97e-d8eee189289b.png)
+![Screen Shot 2022-10-24 at 4 34 05 PM](https://user-images.githubusercontent.com/25111091/197633996-2a1553f9-3126-4158-a964-b90911b5c660.png)
 
 # Standard Attention Implementation
 ![Screen Shot 2022-10-24 at 4 16 04 PM](https://user-images.githubusercontent.com/25111091/197633381-886b30ad-027d-4fde-8862-260fc79d477d.png)
