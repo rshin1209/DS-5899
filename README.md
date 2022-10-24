@@ -1,6 +1,6 @@
 # Flash Attention
 This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt University.
-The publication by Dao et al. can be found [here](https://arxiv.org/abs/2205.14135)
+The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with IO-Awareness) by Dao et al. can be found [here](https://arxiv.org/abs/2205.14135)
 # Motivation of Flash Attention: Modeling Longer Sequences
 * **NLP**: Large context required to understand books, plays, and instruction manuals
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
