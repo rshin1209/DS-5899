@@ -5,6 +5,8 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * **NLP**: Large context required to understand books, plays, and instruction manuals
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
 * **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
+
+# What are the existing methods to accomodate longer sequences?
 ## Existing studies for faster and efficient attention methods
 **Existing study do not show wall-clock speedup against the standard attention method.**
 ### Sparse-approximations
