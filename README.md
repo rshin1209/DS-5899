@@ -8,7 +8,7 @@ This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt
 ## How to scale Transformers to longer sequences?
 
 # Attention is the HEART of Transformers
-<img src=https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png, width="200"/)
+<img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png", width="200"/)
 
 # Background: Attention is Bottlenecked by Memory Reads/Writes
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
