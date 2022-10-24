@@ -6,6 +6,9 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
 * **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
 
+# Attention is the HEART of Transformers
+<img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
+
 # What are the existing methods to accomodate longer sequences?
 ## Existing studies for the 
 **Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.**
@@ -20,9 +23,6 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 * Iz Beltagy, Matthew E Peters, and Arman Cohan. Longformer: The long-document transformer. arXiv preprint arXiv:2004.05150, 2020.
 * Beidi Chen, Tri Dao, Eric Winsor, Zhao Song, Atri Rudra, and Christopher Ré. Scatterbrain: Unifying sparse and low-rank attention. In Advances in Neural Information Processing Systems (NeurIPS), 2021.
 * Manzil Zaheer, Guru Guruganesh, Kumar Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big bird: Transformers for longer sequences. Advances in Neural Information Processing Systems, 33, 2020.
-
-# Attention is the HEART of Transformers
-<img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
 
 # Background: The challenge is the Attention.
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
