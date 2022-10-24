@@ -31,7 +31,10 @@ The publication (FLASHATTENTION: Fast and Memory-Efficient Exact Attention with 
 
 ## Flash Attention
 ![Screen Shot 2022-10-24 at 4 34 05 PM](https://user-images.githubusercontent.com/25111091/197633996-2a1553f9-3126-4158-a964-b90911b5c660.png)
-
+* **GPU Memory Hierarchy (Left)**: For example, the A100 GPU has 40-80GB of high bandwidth memory (HBM) with bandwidth 1.5-2.0TB/s and 192KB of on-chip SRAM per each of 108 streaming multiprocessors with bandwidth estimated around 19TB/s.
+* **FlashAttention (Middle)**: FlashAttention loops through blocks of the K and V matrices and loads them to fast on-chip SRAM. In each block, FlashAttention loops over blocks of Q matrix (blue arrows), loading them to SRAM, and writing the output of the attention computation back to HBM.
+* **Attention Speed Comparison (Right)**: Speedup comparison against the PyTorch implementation of attention on GPT-2.
+### Question 3: FlashAttention involves "tiling" and "recomputation" techniques. Why does it need recomputation?
 ## Standard Attention Implementation
 ![Screen Shot 2022-10-24 at 4 16 04 PM](https://user-images.githubusercontent.com/25111091/197633381-886b30ad-027d-4fde-8862-260fc79d477d.png)
 
