@@ -12,7 +12,7 @@ This document was prepared **only** for DS-5899 Paper Presentation at Vanderbilt
 
 # Background: Attention is Bottlenecked by Memory Reads/Writes
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
-**O** = Dropout(Softmax(Mask(**QK**<sup>T<\sup>)))**V**
+**O** = Dropout(Softmax(Mask(**QK** <sup> **T** </sup> )))**V**
 # Standard Attention Implementation
 ![Screen Shot 2022-10-24 at 4 16 04 PM](https://user-images.githubusercontent.com/25111091/197631180-2f019f6b-7f5d-408f-80ff-8293bda4e71a.png)
 
