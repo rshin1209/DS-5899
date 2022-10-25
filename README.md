@@ -24,7 +24,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 * Iz Beltagy, Matthew E Peters, and Arman Cohan. Longformer: The long-document transformer. arXiv preprint arXiv:2004.05150, 2020.
 * Beidi Chen, Tri Dao, Eric Winsor, Zhao Song, Atri Rudra, and Christopher Ré. Scatterbrain: Unifying sparse and low-rank attention. In Advances in Neural Information Processing Systems (NeurIPS), 2021.
 * Manzil Zaheer, Guru Guruganesh, Kumar Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big bird: Transformers for longer sequences. Advances in Neural Information Processing Systems, 33, 2020.
-### Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.**
+### Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.
 ## Background: Attention Layer makes Transformers slow and memory-hungry on long sequences.
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
 * where **N** is the sequence length and **d** is the head dimension.
