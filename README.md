@@ -54,7 +54,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 
 ### FlashAttention does not involve comparison against multi-GPU Transformers training.
 
-## Studies
+## Resources
 * **FlashAttention Github**:https://github.com/HazyResearch/flash-attention
 * **Linformer**: Sinong Wang, Belinda Z Li, Madian Khabsa, Han Fang, and Hao Ma. Linformer: Self-attention with linear complexity. arXiv preprint arXiv:2006.04768, 2020.
 * **Linear Attention**: Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and François Fleuret. Transformers are RNNs: Fast autoregressive transformers with linear attention. In International Conference on Machine Learning, pages 5156–5165. PMLR, 2020.
