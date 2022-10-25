@@ -45,6 +45,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 ![Screen Shot 2022-10-24 at 4 13 45 PM](https://user-images.githubusercontent.com/25111091/197630869-d6a48fba-d4f1-4027-ae48-7fc3a4a820ad.png)
 * where **N** is the sequence length, **d** is the head dimension and **M** is the size of SRAM while **d &le; M &le; Nd**.
 * **O(N<sup>2</sup>d<sup>2</sup>M<sup>-1</sup>)** HBM Accesses
+### FlashAttention does not change the output!
 ## FlashAttention Benchmark
 ![Screen Shot 2022-10-24 at 4 36 00 PM](https://user-images.githubusercontent.com/25111091/197634326-b64e78b8-1879-4fbb-ae9b-895d01b4cb4c.png)
 
