@@ -47,4 +47,9 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 ## FlashAttention Benchmark
 ![Screen Shot 2022-10-24 at 4 36 00 PM](https://user-images.githubusercontent.com/25111091/197634326-b64e78b8-1879-4fbb-ae9b-895d01b4cb4c.png)
 
-## Critical Analysis: Limitation
+## Critical Analysis: Expectations and Limitations
+* ***IO-Aware Deep* Learning Approach**: Attention is the most memory-intensive computation in Transformers, but every layer in a deep network touches GPU HBM. This approach can inspire new IO-Aware implementations of other layers.
+* **Low-level language implementation**: A *new* CUDA kernel for each new FlashAttention layer implementation required; therefore, implementations cannot be transferrable across GPU architectures and requires further development in a **high-level language**.
+* **Single-GPU *IO-Aware* Methods**: FlashAttention is optimal for a single GPU only.
+
+### FlashAttention does not involve comparison against multi-GPU Transformers training.
