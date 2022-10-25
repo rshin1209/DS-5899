@@ -11,10 +11,11 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 
 ### Question 1: What are the existing methods to accomodate longer sequences?
 ## Existing studies for the 
-**Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.**
 ### Sparse-approximations
 * Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya. Reformer: The efficient transformer. In The International Conference on Machine Learning (ICML), 2020.
 * Aurko Roy, Mohammad Saffar, Ashish Vaswani, and David Grangier. Efficient content-based sparse attention with routing transformers. Transactions of the Association for Computational Linguistics, 9: 53–68, 2021.
+<img width="611" alt="Screen_Shot_2020-05-30_at_3 09 30_PM" src="https://user-images.githubusercontent.com/25111091/197658994-26be62f8-5c18-434a-9933-cfb9f8045a1f.png">
+
 ### Low-rank approximations
 * Krzysztof Marcin Choromanski, Valerii Likhosherstov, David Dohan, Xingyou Song, Andreea Gane, Tamas Sarlos, Peter Hawkins, Jared Quincy Davis, Afroz Mohiuddin, Lukasz Kaiser, et al. Rethinking attention with performers. In International Conference on Learning Representations (ICLR), 2020.
 * Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and François Fleuret. Transformers are RNNs: Fast autoregressive transformers with linear attention. In International Conference on Machine Learning, pages 5156–5165. PMLR, 2020.
@@ -23,7 +24,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 * Iz Beltagy, Matthew E Peters, and Arman Cohan. Longformer: The long-document transformer. arXiv preprint arXiv:2004.05150, 2020.
 * Beidi Chen, Tri Dao, Eric Winsor, Zhao Song, Atri Rudra, and Christopher Ré. Scatterbrain: Unifying sparse and low-rank attention. In Advances in Neural Information Processing Systems (NeurIPS), 2021.
 * Manzil Zaheer, Guru Guruganesh, Kumar Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big bird: Transformers for longer sequences. Advances in Neural Information Processing Systems, 33, 2020.
-
+**Existing studies are APPROXIMATE attention and do not show wall-clock speedup against the standard attention method.**
 ## Background: Attention Layer makes Transformers slow and memory-hungry on long sequences.
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
 * where **N** is the sequence length and **d** is the head dimension.
