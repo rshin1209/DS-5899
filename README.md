@@ -10,7 +10,7 @@ The publication (*FLASHATTENTION: Fast and Memory-Efficient Exact Attention with
 <img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
 
 ### Question 1: What are the existing methods to accomodate longer sequences?
-## Existing studies for the 
+## Existing studies for the Attention Layer Improvements
 ### Sparse-approximations
 * Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya. Reformer: The efficient transformer. In The International Conference on Machine Learning (ICML), 2020.
 * Aurko Roy, Mohammad Saffar, Ashish Vaswani, and David Grangier. Efficient content-based sparse attention with routing transformers. Transactions of the Association for Computational Linguistics, 9: 53–68, 2021.
