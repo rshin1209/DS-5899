@@ -1,15 +1,15 @@
 # FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
 This document was prepared **only** for **DS-5899 Paper Presentation at Vanderbilt University**.
 The publication (*FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness*) by Dao et al. can be found [here](https://arxiv.org/abs/2205.14135)
-## Motivation of Flash Attention: Modeling Longer Sequences
+## Motivation of FlashAttention: Modeling Longer Sequences
 * **NLP**: Large context required to understand books, plays, and instruction manuals
 * **Computer Vision**: Higher resolution can lead to a better and more robust insight
-* **Time series, audio, video, medical imaging**: Data are intrinsicly modeled as sequences of multiple steps
+* **Time series, audio, video, medical imaging**: Data are intrinsically modeled as sequences of multiple steps
 
-## Attention is the HEART of Transformers
+## Attention layer is the HEART of Transformers
 <img src="https://user-images.githubusercontent.com/25111091/197630239-df4a88d6-7bd6-4d81-88cd-f3beae23fb9e.png" width="500">
 
-### Question 1: What are the existing methods to accomodate longer sequences?
+### Question 1: What are the existing methods to accommodate longer sequences?
 ## Existing studies for the Attention Layer Improvements
 ### Sparse-approximations
 * Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya. Reformer: The efficient transformer. In The International Conference on Machine Learning (ICML), 2020.
@@ -29,9 +29,9 @@ The publication (*FlashAttention: Fast and Memory-Efficient Exact Attention with
 ![Screen Shot 2022-10-24 at 4 12 20 PM](https://user-images.githubusercontent.com/25111091/197630379-74042ca2-a8f1-4c29-b029-c4e7019a79f7.png)
 * where **N** is the sequence length and **d** is the head dimension.
 * **O** = Dropout(Softmax(Mask(**QK**<sup>**T**</sup>)))**V**
-### Question 2: Is Attention **Compute-Bound** or **Memory-Bound**?
+### Question 2: Is Attention layer **Compute-Bound** or **Memory-Bound**?
 
-## FlashAttention: *IO-Aware* Attention Model
+## FlashAttention: *IO-Aware* Attention layer
 ![Screen Shot 2022-10-24 at 4 34 05 PM](https://user-images.githubusercontent.com/25111091/197633996-2a1553f9-3126-4158-a964-b90911b5c660.png)
 * **GPU Memory Hierarchy (Left)**: For example, the A100 GPU has 40-80GB of high bandwidth memory (HBM) with bandwidth 1.5-2.0TB/s and 192KB of on-chip SRAM per each of 108 streaming multiprocessors with bandwidth estimated around 19TB/s.
 * **FlashAttention (Middle)**: FlashAttention loops through blocks of the K and V matrices and loads them to fast on-chip SRAM. In each block, FlashAttention loops over blocks of Q matrix (blue arrows), loading them to SRAM, and writing the output of the attention computation back to HBM.
